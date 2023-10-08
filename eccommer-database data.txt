@@ -1,0 +1,55 @@
+
+
+ // --------  Data base table design  -------- //
+
+
+Category ----
+- id (int)
+- category name (String)
+- sub category count (int)
+-  product count (int)
+- slug (string)
+
+
+Sub Category ----
+- id (int)
+- sub category name (String)
+- category id (int)
+- category name (string)
+- sub category product count (int)
+- slug (string)
+
+
+
+Products ----
+- id (int)
+- product name (String)
+- product price (int)
+- product short des (String)
+- product long des (string)
+- product category name (string)
+- product sub category name (string)
+- sub category Id
+- category id
+- product quantity (int)
+- product img (string)
+- product slug (string)
+
+
+Orders ---
+
+- id 
+- product name (String)
+- product id (int)
+- product price (int)
+- product quantity (int)
+- product total price (string)
+- order status (string)
+- order date (date)
+
+
+
+
+
+
+

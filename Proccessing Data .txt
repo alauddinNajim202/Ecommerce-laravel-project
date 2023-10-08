@@ -1,0 +1,41 @@
+// Ecommerce project in laravel 10
+
+/* Modele - 1
+
+1. Install laravel project.
+2. Database conn and config.
+3. Add authentication - like UI, breeze.
+4. Multi Auth using - laratrust package.
+
+ 	laratrust process--
+		- composer require santigarcor/laratrust.
+		- php artisan vendor:publish --tag="laratrust"
+		- php artisan laratrust:setup.
+		- php artisan laratrust:seeder.
+		- php artisan vendor:publish --tag="laratrust-seeder".
+		- composer dump-autoload.
+		- In the database/seeds/DatabaseSeeder.php file you have to add this to the run method:
+			-$this->call(LaratrustSeeder::class).
+		- php artisan migrate.
+		- php artisan db:seed.
+		- in the App\Http\Controllers\Auth\registredUserController 
+			- include $user->attachRole('user'); 
+
+
+
+5. Dasboard - route.
+6. Template mastering .
+7. Create all Route and controller Views- AllCategory,category,All-sub-category, sub-category, Product, Order and Order history.
+
+
+// module 2
+
+1. category add form and show table page create.
+2. sub category add form and show table page create.
+3. product add form and show table page create.
+4. orders  create.
+5. Model and Migration file create.
+6. migration table crate .
+7.then migrate table file.
+
+
